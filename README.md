@@ -220,7 +220,7 @@ A valid set requires that for each feature across three cards:
 - [ ] **Custom Card Sets**: Support for different Set variants
 - [ ] **Mobile Port**: Android/iOS versions using libGDX
 
-## 📝 Code Quality Highlights
+##  Code Quality Highlights
 
 - **Clean Architecture**: Clear separation of concerns between game logic, UI, and configuration
 - **SOLID Principles**: Single responsibility, dependency inversion, and interface segregation
@@ -244,7 +244,7 @@ A valid set requires that for each feature across three cards:
 - **Minimal Locking**: Fine-grained synchronization scope
 - **Event Batching**: Reducing GUI update frequency
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 SetCardGame/
