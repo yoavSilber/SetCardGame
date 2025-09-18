@@ -1,4 +1,4 @@
-# 🎮 Set Card Game - Multithreaded Java Implementation
+#  Set Card Game - Multithreaded Java Implementation
 
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![Swing](https://img.shields.io/badge/Swing-GUI-blue?style=for-the-badge)](https://docs.oracle.com/javase/tutorial/uiswing/)
@@ -6,7 +6,7 @@
 
 > A sophisticated implementation of the classic Set card game featuring advanced multithreading, real-time gameplay, and intelligent AI players.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project is a **multithreaded Java implementation** of the popular Set card game, showcasing advanced programming concepts including:
 
@@ -16,13 +16,13 @@ This project is a **multithreaded Java implementation** of the popular Set card 
 - **GUI Programming** - Rich Swing-based user interface with responsive design
 - **Configuration Management** - Flexible, properties-based game configuration
 
-### 🃏 What is Set?
+###  What is Set?
 
 Set is a card game where players race to identify sets of three cards that satisfy specific pattern rules. Each card has four features (shape, color, number, shading), and a valid set requires that each feature be either all the same or all different across the three cards.
 
-## ✨ Key Features
+##  Key Features
 
-### 🎲 **Game Mechanics**
+###  **Game Mechanics**
 
 - **Real-time Multiplayer**: Support for 2-4 players (human + AI)
 - **81-Card Deck**: Complete Set card deck with mathematical precision
@@ -30,51 +30,51 @@ Set is a card game where players race to identify sets of three cards that satis
 - **Dynamic Timer**: Configurable countdown with visual warnings
 - **Hint System**: Built-in legal set detection and suggestions
 
-### 🧵 **Advanced Threading Architecture**
+###  **Advanced Threading Architecture**
 
 - **Dealer Thread**: Main game controller managing game flow and validation
 - **Player Threads**: Individual threads for each player handling input and actions
 - **AI Threads**: Separate threads for computer players with intelligent decision making
 - **Thread-Safe Operations**: Synchronized data structures and proper concurrency control
 
-### 🎨 **User Interface**
+###  **User Interface**
 
 - **Responsive GUI**: Clean Swing-based interface with smooth animations
 - **Configurable Layout**: Customizable grid dimensions and visual elements
 - **Real-time Updates**: Live score tracking and timer display
 - **Keyboard Mapping**: Intuitive key bindings for fast gameplay
 
-### ⚙️ **Configuration System**
+### ⚙ **Configuration System**
 
 - **Properties-based**: External configuration file for easy customization
 - **No Magic Numbers**: All game parameters externally configurable
 - **Flexible Player Setup**: Adjustable human/AI player ratios
 - **Timing Controls**: Customizable freeze times, delays, and timeouts
 
-## 🏗️ Technical Architecture
+## 🏗 Technical Architecture
 
 ### Core Components
 
 ```
-📦 Set Card Game
-├── 🎮 Game Engine
+ Set Card Game
+├──  Game Engine
 │   ├── Dealer.java          - Main game controller and thread manager
 │   ├── Player.java          - Player logic with thread-safe input handling
 │   └── Table.java           - Shared game state with synchronization
-├── 🖥️ User Interface
+├──  User Interface
 │   ├── UserInterfaceSwing   - GUI implementation and rendering
 │   ├── InputManager         - Keyboard input processing
 │   └── WindowManager        - Window lifecycle management
-├── ⚙️ Configuration
+├──  Configuration
 │   ├── Config.java          - Properties loader and game settings
 │   ├── Env.java             - Shared environment context
 │   └── config.properties    - External configuration file
-└── 🛠️ Utilities
+└──  Utilities
     ├── Util.java            - Set validation and card utilities
     └── ThreadLogger         - Comprehensive logging system
 ```
 
-### 🔄 Threading Model
+###  Threading Model
 
 The application uses a sophisticated multithreading architecture:
 
@@ -83,7 +83,7 @@ The application uses a sophisticated multithreading architecture:
 - **Player Threads**: Handle individual player actions and state management
 - **AI Threads**: Generate intelligent moves for computer players
 
-### 🛡️ Concurrency Features
+###  Concurrency Features
 
 - **Producer-Consumer Pattern**: AI threads produce keypresses, player threads consume
 - **Blocking Queues**: Thread-safe input buffering with size limits (max 3 actions)
@@ -91,7 +91,7 @@ The application uses a sophisticated multithreading architecture:
 - **FIFO Processing**: Fair dealer processing using queue-based player management
 - **Atomic Operations**: Thread-safe score and state updates
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -140,7 +140,7 @@ CellHeight=167          # Card cell height in pixels
 FontSize=40             # UI font size
 ```
 
-## 🎯 Key Programming Concepts Demonstrated
+##  Key Programming Concepts Demonstrated
 
 ### 1. **Advanced Multithreading**
 
@@ -177,14 +177,14 @@ private volatile boolean terminate;
 private volatile boolean gameOn;
 ```
 
-## 📊 Performance Features
+##  Performance Features
 
 - **Lock-Free Operations**: Minimized blocking for responsive gameplay
 - **Efficient Memory Usage**: Optimized data structures for 81-card deck
 - **Real-time Responsiveness**: Sub-100ms response times for user actions
 - **Scalable Architecture**: Supports 1-4 players without performance degradation
 
-## 🎮 Game Rules & Implementation
+##  Game Rules & Implementation
 
 ### Card Representation
 
@@ -205,30 +205,20 @@ A valid set requires that for each feature across three cards:
 - **Token Placement**: Visual feedback for player selections
 - **Freeze System**: Penalty/reward timing mechanisms
 
-## 🧪 Testing & Quality
+##  Testing & Quality
 
 - **Thread Safety**: Comprehensive testing of concurrent operations
 - **Edge Case Handling**: Robust error handling for race conditions
 - **Memory Management**: Proper resource cleanup and thread termination
 - **Logging System**: Detailed execution logging for debugging
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - [ ] **Network Multiplayer**: TCP/IP support for remote players
 - [ ] **Enhanced AI**: Machine learning-based AI players
 - [ ] **Statistics Tracking**: Game history and performance analytics
 - [ ] **Custom Card Sets**: Support for different Set variants
 - [ ] **Mobile Port**: Android/iOS versions using libGDX
-
-## 🛠️ Technical Skills Showcased
-
-| **Concept**                  | **Implementation**                                | **Business Value**                   |
-| ---------------------------- | ------------------------------------------------- | ------------------------------------ |
-| **Multithreading**           | Producer-consumer patterns, thread pools          | High-performance concurrent systems  |
-| **Synchronization**          | Locks, atomic operations, thread-safe collections | Reliable distributed applications    |
-| **Design Patterns**          | Observer, Strategy, Factory patterns              | Maintainable and extensible code     |
-| **GUI Programming**          | Event-driven Swing interface                      | Rich desktop application development |
-| **Configuration Management** | External properties, dependency injection         | Configurable enterprise applications |
 
 ## 📝 Code Quality Highlights
 
@@ -238,7 +228,7 @@ A valid set requires that for each feature across three cards:
 - **Documentation**: Thorough JavaDoc comments and inline documentation
 - **Consistent Style**: Following Java coding conventions and best practices
 
-## 🎯 Architecture Decisions
+##  Architecture Decisions
 
 ### Thread Safety Strategy
 
@@ -275,23 +265,3 @@ SetCardGame/
 ```
 
 ---
-
-### 👨‍💻 About the Developer
-
-This project demonstrates proficiency in:
-
-- **Advanced Java Programming** - Complex multithreading and synchronization
-- **Software Architecture** - Clean, maintainable, and scalable design
-- **Concurrent Programming** - Thread-safe operations and performance optimization
-- **Game Development** - Real-time systems and user experience design
-- **Problem Solving** - Complex algorithm implementation and optimization
-
-_Perfect for roles in: Backend Development, Systems Programming, Game Development, or any position requiring strong Java and multithreading expertise._
-
-## 📞 Contact
-
-Feel free to reach out if you have questions about the implementation or would like to discuss the technical decisions made in this project.
-
----
-
-_⭐ If you found this project interesting, please consider giving it a star on GitHub!_
