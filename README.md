@@ -51,7 +51,7 @@ Set is a card game where players race to identify sets of three cards that satis
 - **Flexible Player Setup**: Adjustable human/AI player ratios
 - **Timing Controls**: Customizable freeze times, delays, and timeouts
 
-## 🏗 Technical Architecture
+##  Technical Architecture
 
 ### Core Components
 
