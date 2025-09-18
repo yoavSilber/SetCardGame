@@ -103,7 +103,7 @@ The application uses a sophisticated multithreading architecture:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/SetCardGame.git
+   git clone https://github.com/yoavSilber/SetCardGame.git
    cd SetCardGame
    ```
 
